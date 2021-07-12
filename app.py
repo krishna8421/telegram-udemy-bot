@@ -2,7 +2,9 @@ import requests
 from bs4 import BeautifulSoup
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 import logging
-TOKEN = ""
+import os
+
+TOKEN = os.getenv('TOKEN')
 
 ###___Telegram___###
 # Logs
